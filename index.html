@@ -3,22 +3,127 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Tomisha Studios</title>
+  <meta name="description" content="Tomisha Studios creates focused, colorful mobile games including Hue Shift and Near Miss Runner.">
+  <meta name="theme-color" content="#090b14">
+  <title>Tomisha Studios — Independent Mobile Games</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <h1>Tomisha Studios</h1>
-  <p>Independent mobile game developer and publisher of Near Miss Runner.</p>
+  <div class="aurora aurora-one" aria-hidden="true"></div>
+  <div class="aurora aurora-two" aria-hidden="true"></div>
 
-  <p>
-    <a href="https://play.google.com/store/apps/details?id=com.tomishastudios.nearmissrunner">
-      Near Miss Runner on Google Play
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="Tomisha Studios home">
+      <span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
+      <span>Tomisha Studios</span>
     </a>
-  </p>
+    <nav aria-label="Main navigation">
+      <a href="#games">Games</a>
+      <a href="#studio">Studio</a>
+      <a class="nav-cta" href="#support">Support</a>
+    </nav>
+  </header>
 
-  <p>
-    <a href="https://classnam.github.io/Tomisha-Studios-Privacy-Policy/">
-      Privacy Policy
-    </a>
-  </p>
+  <main id="top">
+    <section class="hero" aria-labelledby="hero-title">
+      <p class="eyebrow"><span></span> Independent game studio</p>
+      <h1 id="hero-title">Small games.<br><em>Big energy.</em></h1>
+      <p class="hero-copy">We craft vivid mobile experiences built around one great idea—easy to pick up, satisfying to master, and always worth one more round.</p>
+      <div class="hero-actions">
+        <a class="button button-primary" href="#games">Explore our games <span aria-hidden="true">↓</span></a>
+        <a class="button button-quiet" href="#studio">Meet the studio</a>
+      </div>
+      <div class="hero-art" aria-hidden="true">
+        <div class="orbit orbit-a"></div>
+        <div class="orbit orbit-b"></div>
+        <div class="hero-tile tile-yellow"></div>
+        <div class="hero-tile tile-blue"></div>
+        <div class="hero-tile tile-coral"></div>
+        <div class="hero-tile tile-violet"></div>
+        <div class="runner-streak"></div>
+      </div>
+    </section>
+
+    <section class="games" id="games" aria-labelledby="games-title">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow"><span></span> Available now</p>
+          <h2 id="games-title">Choose your challenge</h2>
+        </div>
+        <p>Two distinct worlds. The same obsession with responsive play and clean design.</p>
+      </div>
+
+      <article class="game-card hue-card">
+        <div class="game-visual hue-visual" aria-hidden="true">
+          <div class="hue-logo"><b></b><b></b><b></b><b></b></div>
+          <span class="visual-label">Color. Focus. Flow.</span>
+        </div>
+        <div class="game-content">
+          <div class="game-meta"><span class="status-dot"></span> Puzzle · Mobile</div>
+          <h3>Hue Shift</h3>
+          <p>Match the moment, shift the color, and find your rhythm in a crisp arcade challenge made for focused play.</p>
+          <ul class="feature-list" aria-label="Hue Shift features">
+            <li>Quick, satisfying rounds</li>
+            <li>Color-driven arcade play</li>
+            <li>Easy to learn, hard to master</li>
+          </ul>
+          <a class="store-button" href="https://play.google.com/store/apps/details?id=com.tomishastudios.hueshift" target="_blank" rel="noopener">
+            <span class="play-icon" aria-hidden="true">▶</span><span><small>GET IT ON</small>Google Play</span>
+          </a>
+        </div>
+      </article>
+
+      <article class="game-card runner-card">
+        <div class="game-visual runner-visual">
+          <img src="near-miss-icon.svg" alt="Near Miss Runner app icon" width="156" height="156">
+          <span class="visual-label">One tap. No brakes.</span>
+        </div>
+        <div class="game-content">
+          <div class="game-meta"><span class="status-dot"></span> Arcade · Survival</div>
+          <h3>Near Miss Runner</h3>
+          <p>Thread the cyber tunnel, dodge incoming barriers, and chase a new record in a fast one-tap survival game.</p>
+          <ul class="feature-list" aria-label="Near Miss Runner features">
+            <li>Instant one-tap controls</li>
+            <li>Fast, replayable runs</li>
+            <li>Challenges, modes, and rewards</li>
+          </ul>
+          <a class="store-button" href="https://play.google.com/store/apps/details?id=com.tomishastudios.nearmissrunner" target="_blank" rel="noopener">
+            <span class="play-icon" aria-hidden="true">▶</span><span><small>GET IT ON</small>Google Play</span>
+          </a>
+        </div>
+      </article>
+    </section>
+
+    <section class="studio" id="studio" aria-labelledby="studio-title">
+      <div>
+        <p class="eyebrow"><span></span> Made independently</p>
+        <h2 id="studio-title">Playful ideas,<br>finished with care.</h2>
+      </div>
+      <div class="studio-copy">
+        <p>Tomisha Studios is an independent mobile game studio creating compact experiences with bold identities. We care about responsive controls, readable design, and respecting the player's time.</p>
+        <div class="principles">
+          <span>Focused gameplay</span><span>Distinct visual worlds</span><span>Player-first design</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="support" id="support" aria-labelledby="support-title">
+      <p class="eyebrow light"><span></span> Need a hand?</p>
+      <h2 id="support-title">We're here to help.</h2>
+      <p>Questions, feedback, or an issue with one of our games? Reach out and tell us which game and device you're using.</p>
+      <div class="support-actions">
+        <a class="button button-light" href="mailto:mizou_tb+gonsole@live.fr">Contact support <span aria-hidden="true">↗</span></a>
+        <a class="text-link" href="Tomisha-Studios-Privacy-Policy/">Privacy policy <span aria-hidden="true">↗</span></a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <a class="brand footer-brand" href="#top"><span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i><i></i></span><span>Tomisha Studios</span></a>
+    <p>Independent games, thoughtfully made.</p>
+    <div><a href="Tomisha-Studios-Privacy-Policy/">Privacy</a><span>© <span id="year">2026</span> Tomisha Studios</span></div>
+  </footer>
+
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
 </body>
 </html>
