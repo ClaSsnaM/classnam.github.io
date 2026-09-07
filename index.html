@@ -5,8 +5,23 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Tomisha Studios creates focused, colorful mobile games including Hue Shift and Near Miss Runner.">
   <meta name="theme-color" content="#090b14">
+  <meta property="og:title" content="Tomisha Studios — Independent Mobile Games">
+  <meta property="og:description" content="Focused, colorful mobile games made independently.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://tomishastudios.com/">
+  <link rel="canonical" href="https://tomishastudios.com/">
   <title>Tomisha Studios — Independent Mobile Games</title>
+  <link rel="icon" href="tomisha-mark.svg" type="image/svg+xml">
   <link rel="stylesheet" href="styles.css">
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Tomisha Studios",
+      "url": "https://tomishastudios.com/",
+      "email": "support@tomishastudios.com"
+    }
+  </script>
 </head>
 <body>
   <div class="aurora aurora-one" aria-hidden="true"></div>
@@ -14,8 +29,8 @@
 
   <header class="site-header">
     <a class="brand" href="#top" aria-label="Tomisha Studios home">
-      <span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
-      <span>Tomisha Studios</span>
+      <img class="brand-logo" src="tomisha-mark.svg" alt="" width="34" height="34">
+      <span><strong>tomisha</strong><small>STUDIOS</small></span>
     </a>
     <nav aria-label="Main navigation">
       <a href="#games">Games</a>
@@ -34,13 +49,13 @@
         <a class="button button-quiet" href="#studio">Meet the studio</a>
       </div>
       <div class="hero-art" aria-hidden="true">
-        <div class="orbit orbit-a"></div>
-        <div class="orbit orbit-b"></div>
-        <div class="hero-tile tile-yellow"></div>
-        <div class="hero-tile tile-blue"></div>
-        <div class="hero-tile tile-coral"></div>
-        <div class="hero-tile tile-violet"></div>
-        <div class="runner-streak"></div>
+        <div class="logo-cloud">
+          <img class="floating-mark mark-one" src="tomisha-mark.svg" alt="">
+          <img class="floating-mark mark-two" src="tomisha-mark.svg" alt="">
+          <img class="floating-mark mark-three" src="tomisha-mark.svg" alt="">
+          <img class="floating-mark mark-four" src="tomisha-mark.svg" alt="">
+          <img class="floating-mark mark-five" src="tomisha-mark.svg" alt="">
+        </div>
       </div>
     </section>
 
@@ -54,8 +69,11 @@
       </div>
 
       <article class="game-card hue-card">
-        <div class="game-visual hue-visual" aria-hidden="true">
-          <div class="hue-logo"><b></b><b></b><b></b><b></b></div>
+        <div class="game-visual hue-visual">
+          <div class="hue-icon-frame">
+            <span class="hue-icon-fallback" aria-hidden="true">HS</span>
+            <img src="hue-shift-icon.svg" alt="Hue Shift app icon" width="180" height="180" onerror="this.hidden=true;this.parentElement.classList.add('is-fallback')">
+          </div>
           <span class="visual-label">Color. Focus. Flow.</span>
         </div>
         <div class="game-content">
@@ -68,7 +86,13 @@
             <li>Easy to learn, hard to master</li>
           </ul>
           <a class="store-button" href="https://play.google.com/store/apps/details?id=com.tomishastudios.hueshift" target="_blank" rel="noopener">
-            <span class="play-icon" aria-hidden="true">▶</span><span><small>GET IT ON</small>Google Play</span>
+            <svg class="google-play-mark" viewBox="0 0 32 36" aria-hidden="true" focusable="false">
+              <path fill="#00c9b7" d="M2 1.4 13.6 18 2 34.6c-.62-.72-1-1.76-1-3.05V4.45C1 3.16 1.38 2.12 2 1.4Z"/>
+              <path fill="#48a9ff" d="m2 34.6 11.6-16.6 6.55 6.05L4.4 34.95c-.92.55-1.73.35-2.4-.35Z"/>
+              <path fill="#ffd34e" d="M2 1.4c.67-.7 1.48-.9 2.4-.35l15.75 10.9L13.6 18Z"/>
+              <path fill="#ff5b5f" d="m20.15 11.95 8.72 5.08c1.5.88 1.5 1.06 0 1.94l-8.72 5.08L13.6 18Z"/>
+            </svg>
+            <span><small>GET IT ON</small>Google Play</span>
           </a>
         </div>
       </article>
@@ -88,7 +112,13 @@
             <li>Challenges, modes, and rewards</li>
           </ul>
           <a class="store-button" href="https://play.google.com/store/apps/details?id=com.tomishastudios.nearmissrunner" target="_blank" rel="noopener">
-            <span class="play-icon" aria-hidden="true">▶</span><span><small>GET IT ON</small>Google Play</span>
+            <svg class="google-play-mark" viewBox="0 0 32 36" aria-hidden="true" focusable="false">
+              <path fill="#00c9b7" d="M2 1.4 13.6 18 2 34.6c-.62-.72-1-1.76-1-3.05V4.45C1 3.16 1.38 2.12 2 1.4Z"/>
+              <path fill="#48a9ff" d="m2 34.6 11.6-16.6 6.55 6.05L4.4 34.95c-.92.55-1.73.35-2.4-.35Z"/>
+              <path fill="#ffd34e" d="M2 1.4c.67-.7 1.48-.9 2.4-.35l15.75 10.9L13.6 18Z"/>
+              <path fill="#ff5b5f" d="m20.15 11.95 8.72 5.08c1.5.88 1.5 1.06 0 1.94l-8.72 5.08L13.6 18Z"/>
+            </svg>
+            <span><small>GET IT ON</small>Google Play</span>
           </a>
         </div>
       </article>
@@ -112,16 +142,16 @@
       <h2 id="support-title">We're here to help.</h2>
       <p>Questions, feedback, or an issue with one of our games? Reach out and tell us which game and device you're using.</p>
       <div class="support-actions">
-        <a class="button button-light" href="mailto:mizou_tb+gonsole@live.fr">Contact support <span aria-hidden="true">↗</span></a>
-        <a class="text-link" href="Tomisha-Studios-Privacy-Policy/">Privacy policy <span aria-hidden="true">↗</span></a>
+        <a class="button button-light" href="mailto:support@tomishastudios.com">Contact support <span aria-hidden="true">↗</span></a>
+        <a class="text-link" href="https://tomishastudios.com/privacy/">Privacy policy <span aria-hidden="true">↗</span></a>
       </div>
     </section>
   </main>
 
   <footer>
-    <a class="brand footer-brand" href="#top"><span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i><i></i></span><span>Tomisha Studios</span></a>
+    <a class="brand footer-brand" href="#top"><img class="brand-logo" src="tomisha-mark.svg" alt="" width="30" height="30"><span><strong>tomisha</strong><small>STUDIOS</small></span></a>
     <p>Independent games, thoughtfully made.</p>
-    <div><a href="Tomisha-Studios-Privacy-Policy/">Privacy</a><span>© <span id="year">2026</span> Tomisha Studios</span></div>
+    <div><a href="https://tomishastudios.com/privacy/">Privacy</a><span>© <span id="year">2026</span> Tomisha Studios</span></div>
   </footer>
 
   <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
