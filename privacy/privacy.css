@@ -1,0 +1,63 @@
+.privacy-page main { width: min(calc(100% - 40px), var(--max)); min-width: 0; margin-inline: auto; }
+
+.privacy-hero { padding: 78px 0 70px; border-bottom: 1px solid var(--line); }
+.back-link { display: inline-flex; align-items: center; gap: 9px; margin-bottom: 68px; color: var(--muted); font-size: .82rem; font-weight: 750; }
+.back-link:hover { color: var(--ink); }
+.privacy-hero h1 { max-width: 900px; }
+.privacy-intro { max-width: 760px; margin-bottom: 38px; color: var(--muted); font-size: clamp(1.05rem, 2vw, 1.28rem); line-height: 1.7; }
+.policy-meta { display: flex; flex-wrap: wrap; gap: 10px; }
+.policy-meta span { padding: 10px 14px; border: 1px solid var(--line); border-radius: 999px; color: var(--muted); font-size: .75rem; }
+.policy-meta strong { margin-right: 5px; color: var(--ink); }
+
+.privacy-layout { display: grid; grid-template-columns: 220px minmax(0, 1fr); align-items: start; gap: 72px; padding: 72px 0 110px; }
+.policy-nav { position: sticky; top: 28px; display: flex; flex-direction: column; gap: 5px; }
+.policy-nav p { margin: 0 0 12px; color: var(--ink); font-size: .72rem; font-weight: 850; letter-spacing: .12em; text-transform: uppercase; }
+.policy-nav a { padding: 8px 0; color: var(--muted); font-size: .82rem; border-bottom: 1px solid transparent; }
+.policy-nav a:hover { color: var(--ink); border-color: var(--line); }
+
+.policy-card { min-width: 0; overflow: hidden; border: 1px solid var(--line); border-radius: 30px; background: rgba(17,20,33,.78); box-shadow: 0 30px 80px rgba(0,0,0,.22); }
+.policy-card section { padding: clamp(34px, 6vw, 64px); border-bottom: 1px solid var(--line); scroll-margin-top: 24px; }
+.policy-card section:last-child { border-bottom: 0; }
+.section-number { margin-bottom: 16px; color: var(--lime); font-size: .7rem; font-weight: 850; letter-spacing: .13em; text-transform: uppercase; }
+.policy-card h2 { margin-bottom: 28px; font-size: clamp(2rem, 4vw, 3.45rem); }
+.policy-card h3 { margin: 34px 0 12px; font-size: 1.08rem; letter-spacing: -.02em; }
+.policy-card p, .policy-card li { color: var(--muted); line-height: 1.75; }
+.policy-card p { max-width: 780px; }
+.policy-card ul { margin: 0; padding-left: 1.25rem; }
+.policy-card li { margin-bottom: 12px; padding-left: 5px; }
+.policy-card strong { color: var(--ink); }
+.notice { margin-top: 30px; padding: 20px 22px; border: 1px solid rgba(210,93,71,.3); border-radius: 18px; color: var(--muted); background: rgba(210,93,71,.07); line-height: 1.65; }
+
+.app-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; }
+.app-summary { padding: 24px; border: 1px solid var(--line); border-radius: 22px; background: rgba(255,255,255,.025); }
+.app-summary > div { min-width: 0; }
+.app-summary img { float: left; margin: 0 16px 12px 0; border-radius: 14px; }
+.app-summary h3 { margin: 6px 0 7px; color: var(--ink); font-size: 1.25rem; }
+.app-summary code { color: var(--muted); font-size: .67rem; overflow-wrap: anywhere; }
+.app-summary p { clear: both; margin: 22px 0; font-size: .88rem; }
+.app-summary a { color: var(--ink); font-size: .8rem; font-weight: 800; }
+
+.link-list { margin-top: 28px; border-top: 1px solid var(--line); }
+.link-list a { display: flex; justify-content: space-between; gap: 20px; padding: 15px 0; border-bottom: 1px solid var(--line); color: var(--ink); font-size: .86rem; font-weight: 720; }
+.link-list a:hover { color: var(--lime); }
+
+.contact-section { background: linear-gradient(145deg, rgba(210,93,71,.09), rgba(113,54,45,.08)); }
+.contact-section .button { margin: 8px 0 24px; }
+.contact-site { font-size: .82rem; }
+.contact-site a { color: var(--ink); border-bottom: 1px solid var(--line); }
+
+@media (max-width: 840px) {
+  .privacy-layout { grid-template-columns: 1fr; gap: 28px; padding-top: 40px; }
+  .policy-nav { position: static; display: none; }
+  .app-grid { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 520px) {
+  .privacy-page main { width: min(calc(100% - 24px), var(--max)); }
+  .privacy-hero { padding-top: 46px; }
+  .back-link { margin-bottom: 50px; }
+  .policy-card { border-radius: 22px; }
+  .policy-card section { padding: 30px 22px; }
+  .policy-meta { align-items: flex-start; flex-direction: column; }
+  .contact-section .button { width: 100%; padding-inline: 12px; font-size: .86rem; }
+}
